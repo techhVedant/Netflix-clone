@@ -24,3 +24,6 @@ jobs:
       - name: File Scan with Trivy
         run: trivy fs . > fileScanReport.txt
 
+      - name: Build Docker Image
+        run: docker build -t netflixClone:latest .
+
