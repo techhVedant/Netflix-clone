@@ -47,7 +47,7 @@ jobs:
   deploy:
     needs: Build
     name: Deploy
-    runs-on: [self-hosted]
+    runs-on: [self-hosted] 
 
     steps: 
       - name: Deploy to container
