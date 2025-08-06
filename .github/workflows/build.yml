@@ -41,6 +41,7 @@ jobs:
         with:
           push: true
           tags: techhforvedant21/netflixclone:latest
+          build-args: TMDB_V3_API_KEY=${{ secrets.TMDB_V3_API_KEY }}
 
   deploy:
     needs: Build
