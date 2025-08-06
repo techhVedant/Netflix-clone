@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  Build:
     name: Build, analyze and scan
     runs-on: [self-hosted]
     
@@ -43,6 +43,7 @@ jobs:
           tags: techhforvedant21/netflixclone:latest
 
   deploy:
+    needs: Build
     name: Deploy
     runs-on: [self-hosted]
 
